@@ -1,0 +1,41 @@
+%//==============================--@--==============================//%
+\subsubsection*{Carga ligada em estrela (Y) vs ligação em triângulo ($\pmb{\Delta}$)}
+
+ Numa configuração de ligação em estrela, cada carga (ou resistência) está diretamente ligada a um ponto neutro comum. Isto implica que a tensão aplicada diretamente a cada carga é a tensão simples. Em contrapartida, na configuração de triângulo, não existe um ponto neutro comum para as cargas. Em vez disso, estas estão interligadas de forma a que cada carga tenha aos seus terminais uma tensão composta ($\sqrt{3}$ maior que o valor eficaz da tensão simples).
+
+\noindent Ainda na configuração em triângulo, a corrente total em cada linha resulta da diferença vetorial entre duas correntes compostas. É importante salientar que:
+\begin{enumerate}  
+    \item As correntes compostas apresentam um desfasamento de 120º entre si.
+    \item As correntes simples têm um desfasamento de 30º em relação à sua correspondente corrente composta.
+\end{enumerate}
+
+\noindent Logo, a relação entre a corrente simples e a composta é dada por:
+$$
+    I_{simples}=\sqrt{3}\, I_{composto} 
+$$
+Por outro lado, na configuração em triângulo, a amplitude da corrente que circula pela linha é três vezes maior do que aquela observada quando a carga está ligada em estrela. Para exemplificar:
+$$
+    \boxed{\bar{I}_1 = \dfrac{\overline{V}_{12} - \overline{V}_{31}}{Z_\Delta} = \dfrac{3\overline{V}_1}{Z_\Delta}}
+$$
+Tendo em conta o anteriormente exposto, e assumindo um sistema simétrico, antecipa-se que a potência ativa total absorvida por uma carga trifásica, quando em ligação em triângulo, seja 3 vezes superior à observada numa ligação em estrela. Isto pode ser explicado pela seguinte relação de potência:
+$$
+\begin{aligned}
+    P_{\Delta_{ativa}} &= V_{\Delta_{1}} I_{\Delta_{1}} + V_{\Delta_{2}} I_{\Delta_{2}} + V_{\Delta_{3}} I_{\Delta_{3}}\\
+    &= \sqrt{3}V_{\text{Y}_1}\cdot\frac{3}{\sqrt{3}}I_{\text{Y}_1} + \sqrt{3}V_{\text{Y}_2}\cdot\frac{3}{\sqrt{3}}I_{\text{Y}_2} + \sqrt{3}V_{\text{Y}_3}\cdot\frac{3}{\sqrt{3}}I_{\text{Y}_3}\\
+    &= 3 \cdot 3 \cdot V_{\text{Y}_2}I_{\text{Y}_2}\\
+    &= 3 \cdot P_{\text{Y}_{ativa}}
+\end{aligned}
+$$
+No entanto, face às flutuações na rede elétrica que se verificam a nível nacional, os resultados obtidos não o demonstram na perfeição, apesar de se manterem as relações essenciais. Por fim, é importante salientar que, na montagem em estrela, encontrámos uma corrente muito baixa a circular pelo neutro --- sendo um sistema resistivo, se a rede estiver equilibrada e simétrica, as correntes teriam a mesma fase que as tensões simples, pelo que a sua soma seria nula. Isto pode não ter acontecido porque, entre outros motivos, a desfasagem entre as fases não era de exatamente 120$^{\circ}$ como observado experimentalmente.
+%//==============================--@--==============================//%
+\subsubsection*{Desfasamento tensão simples - tensão composta}
+
+O desfasamento entre a tensão simples e a tensão composta está intrinsecamente relacionado com a geometria e as propriedades vetoriais das tensões em sistemas trifásicos, tal como ilustrado na figura ao anexada lado. É relevante salientar:
+
+\begin{enumerate}
+    \item As tensões simples estão desfasadas de 120$^{\circ}$ entre si, a tensão composta (que é a tensão entre duas fases quaisquer) será a resultante vetorial destas tensões simples. Assumindo o sistema simétrico, o desfasamento é portanto de 30$^{\circ}$ entre a tensão simples e a tensão composta.
+    \item Este desfasamento não só afeta o ângulo entre estas tensões, mas também a sua magnitude. A tensão composta é $\sqrt{3}$ vezes a tensão simples, após uma simples análise trigonométrica.
+\end{enumerate}
+
+\noindent Contudo, experimentalmente não obtivemos exatamente os valores esperados (não obstante, bastante próximos: erro de 0.8\% para a desfasagem entre tensões simples e erro de 10\% para a desfasagem entre tensão simples e tensão composta). Uma possível justificação para estas discrepâncias pode residir nas imperfeições das formas sinusoidais que visualizámos no osciloscópio, tal como se pode verificar em anexo.
+%//==============================--@--==============================//%

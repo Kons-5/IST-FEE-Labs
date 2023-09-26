@@ -1,0 +1,42 @@
+%//==============================--@--==============================//%
+\clearpage
+\subsubsection*{Alimentação simétrica vs Alimentação assimétrica}
+
+Com o aumento da tensão simples $\overline{V}_{1}$ --– especificamente, quando esta é duplicada --- observa-se um desvio na relação típica entre as tensões simples e compostas, como possível observar na representação fasorial anexada ao lado. 
+
+\noindent Dada a expressão:
+$$
+    \overline{V}_{12} = \overline{V}_{1} - \overline{V}_{2} = 2V_\text{simples}\, e^{j0} - V_\text{simples}\, e^{-j2\pi/3} 
+$$
+\noindent Somando as partes reais e imaginárias:
+$$
+	\overline{V}_{12} = (2V_\text{simples} + 0.5V_\text{simples}) + j\frac{\sqrt{3}}{2} V_\text{simples} \rightarrow \boxed{2.5V_\text{simples} - j0.866V_\text{simples}}
+$$
+\noindent Obtemos a magnitude:
+$$
+	V_{12} = |\overline{V}_{12}| = \sqrt{2.5^2 + \left(\frac{\sqrt{3}}{2}\right)^2} = \sqrt{7}\, V_\text{simples}
+$$
+\noindent E para o ângulo do fasor $\overline{V}_{12}$ temos:
+$$
+	\theta = \arctan\left(\frac{\sqrt{3}/2}{2.5}\right) \approx 19^{\circ}
+$$
+\noindent Uma análise semelhante é efetuada para a tensão $\overline{V}_{31}$. Os valores eficazes das tensões compostas $V_{12}$ e $V_{31}$ passam a ser governadas pela seguinte expressão:
+$$
+    \boxed{%
+        V_{12} = V_{31} = \sqrt{7}\, V_\text{simples}
+    }
+$$
+\noindent O ensaio experimental valida a relação, particularmente ao comparar as tensões simples $V_2$ e $V_3$ com as compostas $V_{12}$ e $V_{31}$, evidenciando um fator próximo de $2.6 \approx \sqrt{7}$. Naturalmente, o fasor $\overline{V}_{23}$ mantém-se inalterado, face a esta configuração, uma vez que $\overline{V}_2$ e $\overline{V}_3$ mantiveram todas as suas propriedades.
+
+\noindent Adicionalmente, devido à assimetria introduzida no sistema, ao contrário dos resultados obtidos em 4.2, as tensões nas cargas deixam de ser iguais às suas tensões simples correspondentes. Este fenómeno é consequência direta da presença de uma tensão e corrente no neutro. Com efeito, ao aplicar a lei das malhas, identifica-se uma componente associada à corrente no neutro que não é insignificante. Esta componente, como evidenciado teoricamente na figura à direita, é responsável pelas discrepâncias observadas experimentalmente nas tensões. É então importante salientar que:
+
+\begin{enumerate}
+    \item A soma das correntes que atravessam as cargas não é nula.
+    \item Apesar de se tratar de um sistema puramente resistivo, a introdução de uma assimetria na rede provoca um desfasamento entre as correntes que atravessam as cargas em relação às tensões do gerador correspondentes.
+\end{enumerate}
+
+\noindent Tendo em conta que esta é uma montagem em estrela, uma maior tensão e corrente numa linha resultam num maior consumo de potência na carga correspondente. Assim, é expectável que a potência ativa total da montagem aumente em conformidade face a 4.2.
+
+\noindent \textbf{Nota}: A grandeza $V_\text{simples}$ representa o valor eficaz das tensões simples na primeira experiência (simétrica).
+
+%//==============================--@--==============================//%
