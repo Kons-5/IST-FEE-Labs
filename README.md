@@ -1,6 +1,6 @@
 # IST-FEE-Labs
 
-This repository contains lab materials for the IST-FEE course.
+This repository contains lab materials for the IST-FEE (Fundamentals of Electrical Power Systems) course.
 
 ## Content
 
